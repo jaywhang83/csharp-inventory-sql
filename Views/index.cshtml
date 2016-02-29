@@ -1,0 +1,11 @@
+<h1>Here are the items: </h1>
+<ul>
+  @foreach (var index in Model)
+  {
+    <li>@index.GetName()</li>
+  }
+</ul>
+
+<a href="/item/new"><button>Add a new Item</button></a>
+<a href="/item/delete"><button>Delete Items</button></a>
+<a href="/item/search"><button>Search Item</button></a>
